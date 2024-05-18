@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: "Teko", sans-serif;
+  line-height: 1;
+}
+
+.cursor{
+  height: 1.5vw;
+  width: 1.5vw;
+  border-radius: 50%;
+  /* background-color: #fff; */
+  border: 1px solid #fff;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 9;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.loader {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background: #000000;
+  z-index: 999;
+  overflow: hidden;
+  padding: 13vw 10vw;
+  cursor: none;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.counter h5,
+.counter h6 {
+  font-size: 4vw;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.counter h6 {
+  word-spacing: 12px;
+}
+
+.counter h5 {
+  width: 90px;
+  overflow: hidden;
+}
+
+.line h1 {
+  font-size: 8vw;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.line h2 {
+  font-size: 6.5vw;
+  text-transform: uppercase;
+  animation: anime .9s infinite;
+
+}
+
+@keyframes anime {
+  0% {
+    color: #ffffff;
+  }
+
+  100% {
+    color: transparent;
+  }
+}
+
+#main {
+  position: relative;
+}
+
+.container{
+  padding: 0 80px;
+}
+
+.page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #151515;
+}
+
+.page1 .nav{
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page1 .nav .nav1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+}
+
+.page1 .nav .nav1 i{
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.page1 .nav .nav1 h2{
+  margin-top: 0.3rem;
+  cursor: pointer;
+}
+
+.page1 .nav .nav2 a{
+  color: white;
+  text-decoration: none;
+  z-index: 999;
+}
+
+.page1 .nav .nav2{
+  display: flex;
+  gap: 2rem;
+}
+
+.page1 .nav .nav2 h4{
+  font-weight: 400;
+  font-size: 1.1vw;
+}
+
+.sidebar{
+  height: 100%;
+  width: 30%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.039);
+  top: 0;
+  left: -30%;
+  backdrop-filter: blur(10px);
+  padding: 220px 60px;
+}
+
+.sidebar h4{
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.sidebar i{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.hero_text{
+  width: 72%;
+  margin-left: 28%;
+  overflow: hidden;
+}
+
+.hero_text h1{
+  font-size: 8vw;
+  font-weight: 500;
+  line-height: 6.2vw;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.hero_text:nth-child(1){
+  margin-top: 21vh;
+}
+
